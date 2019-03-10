@@ -3,5 +3,12 @@ background-color: darkgrey;
 color:white;
 }
 h1{ 
-color:blue; 
-}
+
+    margin-left: 238px;
+    margin-right: 259px;
+    margin-top: 83px;
+    padding-left: 256px;
+    border: black;
+    border-style: dotted;
+    text-align: center;
+    background: burlywood;}
