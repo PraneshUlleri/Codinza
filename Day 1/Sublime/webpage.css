@@ -7,7 +7,9 @@ div{
 }
 .twopoint{color : white;
 background-color: black;
-
+    border-style: dotted;
+    margin: 10px;
+    padding-left: 660px;
 }
 h1
 {
