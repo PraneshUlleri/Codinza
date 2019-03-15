@@ -11,3 +11,49 @@ background-color: white;
 background-color: #57B846;
 color:white;
 }
+.green-font{
+color:#57B846;}
+
+a{
+text-decoration: none;
+}
+input
+{
+	padding: 9px;
+    margin: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-left: 16px;
+    padding-right: 55px;
+    background-color: #D2CECE;
+    border: green;
+    border-radius: 21px;
+        padding-left: 21px;
+}
+
+.signin{
+padding: 9px;
+    margin: 10px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    margin-left: 16px;
+    padding-right: 55px;
+    background-color:#57B846;
+    border: green;
+    border-radius: 21px;
+    padding-left: 21px;
+    font-weight:500px;
+}
+
+::placeholder { 
+  color: black;
+  opacity: 1; 
+}
+
+:-ms-input-placeholder { 
+  color: black;
+}
+
+::-ms-input-placeholder { 
+  color: black;
+}
