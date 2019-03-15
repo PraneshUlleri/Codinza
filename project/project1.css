@@ -3,8 +3,9 @@ background-color: #D2CECE;
 }
 div{
 	text-align: center;
-	    margin: 180px 600px; 
+	    margin: 111px 600px; 
 background-color: white;
+border-radius: 15px;
 
 }
 .green-bk{
@@ -21,29 +22,46 @@ input
 {
 	padding: 9px;
     margin: 10px;
+    margin-left: 0px;
+    margin-top: 0px;
+
     padding-top: 13px;
     padding-bottom: 13px;
-    margin-left: 16px;
     padding-right: 55px;
+    padding-left: 21px;
+
     background-color: #D2CECE;
+    
     border: green;
     border-radius: 21px;
-        padding-left: 21px;
+        
 }
 
 .signin{
-padding: 9px;
-    margin: 10px;
-    padding-top: 13px;
-    padding-bottom: 13px;
-    margin-left: 16px;
-    padding-right: 55px;
-    background-color:#57B846;
+margin: 7px;
+    margin-left: 0;    
+    padding: 13px 98px;
+    background-color: #57B846;
     border: green;
     border-radius: 21px;
-    padding-left: 21px;
-    font-weight:500px;
+    font-weight: bold;
+        margin-top: -17px;
 }
+
+h2{
+border: green;
+border-radius: 15px 15px 0px 0px;
+    padding: 35px;
+    font-weight: bold;
+}
+h6{
+color: grey;}
+
+.forgotpass{
+    margin-top: -12px;
+    margin-left: 107px;}
+
+
 
 ::placeholder { 
   color: black;
