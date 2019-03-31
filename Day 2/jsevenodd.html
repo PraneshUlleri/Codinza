@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>odd even</title>
+</head>
+<body>
+<input type="number" name="num" id="numb">
+<h1  id="odev"> Number is _______</h1>
+<button onclick="check()">check it </button>
+
+
+</body>
+
+<script type="text/javascript">
+
+function check(){
+var c= document.getElementById('numb').value
+if (c%2==0){
+document.getElementById('odev').textContent="Number is Even"
+}
+else
+{
+document.getElementById('odev').textContent="Number is Odd"
+}
+}
+</script>
+
+</html>

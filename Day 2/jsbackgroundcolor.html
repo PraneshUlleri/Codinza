@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>color change</title>
+</head>
+<body>
+<button onclick="changeBK()">click me dude</button>
+<h1 style="size:500px; align-content: center; vertical-align: center; text-align: center" id="one">RED or yellow?</h1>
+</body>
+<script type="text/javascript">
+var a=1
+function changeBK(){
+if (a==0){	
+document.body.style.backgroundColor= "#69F0AE"
+document.getElementById('one').style.color="red";
+a++
+}
+else{
+document.body.style.backgroundColor= "#d602ee"
+document.getElementById('one').style.color="yellow";
+a--
+}
+}
+</script>
+
+</html>
