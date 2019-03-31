@@ -1,0 +1,27 @@
+.greybk{
+background-color:#CFD8DC;
+}
+.whitebk{
+	
+	margin-top: -82px;
+	margin-right: -21px;
+background-color:white;
+}
+
+.h800{
+height: 800px;
+}
+.imgtop{
+	margin-top: 54px;
+height: 230px;
+width: 950px;
+margin-left: -15px;
+}
+.roundborder{
+  border-style: solid;
+border-width: 5px;
+border-color: lightgrey;
+height: 185px;
+margin-left: 18px;
+margin-top: -97px;
+  }
