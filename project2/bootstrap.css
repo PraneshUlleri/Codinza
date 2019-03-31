@@ -1147,6 +1147,9 @@ hr {
   margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
+  color: black;
+  border-color:black;
+  background-color: black;
   border-top: 1px solid #eeeeee;
 }
 .sr-only {
