@@ -1,0 +1,10 @@
+.border{
+border-style: solid;
+border-color:black;
+border-width: 3px;
+}
+.margin{
+
+margin-right: 10px;
+margin-left: 10px;
+}
