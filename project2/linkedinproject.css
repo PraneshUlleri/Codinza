@@ -21,7 +21,7 @@ background-color:white;
 .imgtop{
 	margin-top: 54px;
 height: 230px;
-width: 950px;
+width: 944px;
 margin-left: -15px;
 }
 .roundborder{
@@ -43,3 +43,12 @@ margin-bottom: -48px;
  
 } 
 
+.cardtop{
+background-color: white;
+padding-top: 20px;
+}
+.cardbottom{
+background-color: white;
+padding-bottom: 20px;
+
+}
