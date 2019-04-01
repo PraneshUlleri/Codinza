@@ -65,6 +65,7 @@ padding-bottom: 20px;
 margin-bottom: 19px;
 }
 
+
 .greyborder{
 	color:grey;
 
@@ -82,3 +83,28 @@ border-style: solid;
 border-width: 1px;
 
 }
+.blue{
+color: blue;
+margin-left: 34px;
+
+margin-top: 7px;
+}
+.paddhead{
+padding-left: 30px;
+}
+
+.generalinfo{
+margin: 13px;
+margin-bottom:0px ;
+
+padding: 20px;
+}
+.generalinfoicon{
+	color: grey;
+font-size: 20px;
+}
+
+.generalinfotext{
+font-weight: bold;
+padding: 4px;
+padding-left: 6px;}
