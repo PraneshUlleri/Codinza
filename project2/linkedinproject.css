@@ -42,8 +42,35 @@ margin-top: -97px;
 margin-bottom: -48px;
 
 }
-  }
 
+.greyicon{
+color: grey;
+font-size:  25px;
+margin-top: 26px;
+margin-bottom: 45px;
+}
+.iconborder{
+border-style: solid;
+border-width: 2px;
+padding: 3px;
+border-color: lightgrey;
+margin-top: 2px;
+color: grey;
+margin-left: -20px;
+background-color: white;
+
+}
+.coloricon{
+border-style: solid;
+border-width: 2px;
+padding: 3px;
+border-color: #1E88E5;
+margin-top: 2px;
+color:#1E88E5	;
+margin-left: -27px;
+background-color: white;
+z-index: 200;
+}
 .hr {
    height: 1px;
     color: #123455;
@@ -76,13 +103,24 @@ margin-left: 15px;
 margin-right: 15px;
 height: 75px;
 }
-
-.greyindiv{
-border-color: grey;
+.whiteindiv{
+	border-color: white;
 border-style: solid;
 border-width: 1px;
 
 }
+.greyindiv{
+border-color: grey;
+border-style: solid;
+border-width: 1px;
+}
+.pad0{
+padding: 0;}
+.blue0{
+color: blue;
+
+}
+
 .blue{
 color: blue;
 margin-left: 34px;
@@ -108,3 +146,46 @@ font-size: 20px;
 font-weight: bold;
 padding: 4px;
 padding-left: 6px;}
+
+#grad1 {
+  background-image: linear-gradient(90deg, #1A237E, #0D47A1);
+}
+#grad2 {
+  background-image: linear-gradient(90deg, #0D47A1, #1565C0);
+}
+#grad3 {
+  background-image: linear-gradient(90deg, #1565C0, #1976D2);
+}#grad4 {
+  background-image: linear-gradient(90deg, #1976D2, #1E88E5);
+}
+#grad5 {
+  background-image: linear-gradient(90deg, #1E88E5, #00897B);
+}#grad6 {
+  background-image: linear-gradient(90deg, #00897B, #00796B);
+}#grad7 {
+  background-image: linear-gradient(90deg, #00796B, #00695C);
+}
+
+.gradbar{
+height: 12px;
+width: 118px;
+margin-top: 10px;
+}
+
+
+.marginchange{
+margin-top: 8px;
+margin-bottom: 3px;
+
+}
+.buttonoff{
+
+background-color: lightgrey;
+size: 10px;
+height: 22px;
+margin-top: 5px;
+}
+
+.dashinfo{
+margin-left: -27px;
+margin-top: 26px;}
