@@ -1,0 +1,30 @@
+.mainbody{
+background-color: #009688;
+border-style: solid;
+border-color: black;
+text-align: center;
+margin-top: 128px;
+margin-left: 500px;
+
+height: 500px;
+width: 400px;
+
+
+}
+.body{
+background-color: 
+}
+
+.hw100{
+height: 100px;
+width: 400px
+}
+.display{
+background-color: #689F38;
+padding: 38px;
+}
+
+.numkeys{
+color: white;
+background-color: #26A69A;
+}
