@@ -1,30 +1,63 @@
 .mainbody{
-background-color: #009688;
-border-style: solid;
-border-color: black;
+background-color:black;
 text-align: center;
 margin-top: 128px;
-margin-left: 500px;
-
 height: 500px;
 width: 400px;
-
-
 }
-.body{
-background-color: 
-}
-
 .hw100{
 height: 100px;
 width: 400px
 }
 .display{
-background-color: #689F38;
+background-color: rgba(0,77,64,0.3);
 padding: 38px;
 }
-
-.numkeys{
-color: white;
-background-color: #26A69A;
+.display0{
+background-color: rgba(0,77,64,0.3);
 }
+.numkeys{
+color: #18FFFF;
+}
+.neonnumbers{color: white;
+	font-weight:bold; 
+text-shadow: 0 0 6px cyan;
+}
+.neonborder{
+		
+	border-style: solid;
+	border-color: white;
+border-width: 1px;
+box-shadow: 0 0 6px cyan;
+background-color: black;
+
+}
+.neonborderbottom{		
+	border-bottom-style: solid;
+	border-bottom-color: white;
+border-width: 2px;
+box-shadow-bottom: 0 0 6px cyan;
+}
+.neonbotrig{
+margin-top: 21px;
+padding-right: 42px;padding-left: 42px;
+border-bottom-style: solid;
+	border-bottom-color: white;
+border-width: 2px;
+border-right-style: solid;
+	border-right-color: white;
+border-width: 2px;
+
+
+}
+
+.h30px{
+height: 30px;
+
+}
+.h10px{height: 25px;}
+
+.buttonnum{
+width: 86px;
+
+height: 43px;}
