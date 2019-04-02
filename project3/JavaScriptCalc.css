@@ -1,7 +1,7 @@
 .mainbody{
 background-color:black;
 text-align: center;
-margin-top: 128px;
+margin-top: 24px;
 height: 500px;
 width: 400px;
 }
@@ -12,9 +12,6 @@ width: 400px
 .display{
 background-color: rgba(0,77,64,0.3);
 padding: 38px;
-}
-.display0{
-background-color: rgba(0,77,64,0.3);
 }
 .numkeys{
 color: #18FFFF;
@@ -39,21 +36,20 @@ border-width: 2px;
 box-shadow-bottom: 0 0 6px cyan;
 }
 .neonbotrig{
-margin-top: 21px;
+margin-top: 40px;
 padding-right: 42px;padding-left: 42px;
-border-bottom-style: solid;
-	border-bottom-color: white;
-border-width: 2px;
-border-right-style: solid;
-	border-right-color: white;
+border-style: solid;
+	border-color: white;
+
 border-width: 2px;
 
 
 }
-
+.h40px{
+height: 50px;
+}
 .h30px{
 height: 30px;
-
 }
 .h10px{height: 25px;}
 
@@ -61,3 +57,18 @@ height: 30px;
 width: 86px;
 
 height: 43px;}
+
+.displayexpression{
+font-size: 22px;
+
+font-weight: bold;
+
+margin-top: -39px;
+}
+
+.displayans{
+font-size: 40px;
+
+font-weight: bold;
+
+}

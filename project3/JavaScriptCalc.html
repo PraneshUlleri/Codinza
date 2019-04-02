@@ -4,23 +4,35 @@
 	<title>Calculator</title>
 	<link rel="stylesheet" type="text/css" href="JavaScriptCalc.css">
 	<link rel="stylesheet" type="text/css" href="bootstrap.css">
+	<link href="https://fonts.googleapis.com/css?family=Orbitron" rel="stylesheet"> 
 </head>
 <body style="background-color: black;" >
-
+<div class="row">
+<div class="col-xs-12 neonnumbers" style="font-family: 'Orbitron', sans-serif; font-size: 56px;margin-left: 644px;margin-top: 54px">C.A.L.C.</div>
+</div>
 <div class="row">
 	<!--scientific body-->
 <div class="col-xs-4 "> </div>
 <!--calculator body-->
-<div class="col-xs-4 mainbody neonborder"><b class="neonnumbers " style="font-size: 21px">P! Calc</b>
+<div class="col-xs-4 mainbody neonborder">
 <!--display-->
 <div class="row">
 	<div class="col-xs-1 "> </div>
-<div class="col-xs-10 neonbotrig display hw100"> </div>
+<div class="col-xs-10 neonbotrig display hw100"> 
+<div class="row">
+<div class="col-xs-12 neonnumbers displayexpression"style="text-align: left;" id="expression"></div>
+</div>
+<div class="row">
+<div class="col-xs-12 neonnumbers displayans" style="text-align: right;"id="answer"></div>
+</div>
+
+
+ </div>
 <div class="col-xs-1 "> </div>
 </div>
 <!--keypad-->
 <div class="row">
-	<div class="col-xs-12 h30px"> </div>
+	<div class="col-xs-12 h40px"> </div>
 </div>
 <div class="row">
 	<div class="col-xs-1"> </div>
@@ -29,51 +41,59 @@
 
 	<!--row-->
 <div class="row">
-  <div class="col-md-3 h30px "><button type="button" class=" neonnumbers  neonborder buttonnum">(</button></div>
-  <div class="col-md-3 h30px"><button type="button" class=" neonnumbers  neonborder buttonnum">)</button></div>
-   <div class="col-md-3 h30px"><button type="button" class=" neonnumbers  neonborder buttonnum">CE</button></div>
-    <div class="col-md-3 h30px"><button type="button" class=" neonnumbers  neonborder buttonnum">/</button></div>
+  <div class="col-md-3 h30px "><input type="button" class=" neonnumbers  neonborder buttonnum" value="(" onclick="document.getElementById('answer').textContent+='('" /></div>
+  <div class="col-md-3 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value=")" onclick="document.getElementById('answer').textContent+=')'" /></div>
+   <div class="col-md-3 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value="CE" onclick="clearit()" /> </div>
+    <div class="col-md-3 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value="/" onclick="document.getElementById('answer').textContent+='/'" /> </div>
 </div>
 <div class="row">
 	<div class="col-xs-12 h10px"> </div>
 </div>
 <!--row-->
 <div class="row">
-  <div class="col-md-3 h30px"><button type="button" class=" neonnumbers neonborder buttonnum">7</button></div>
-  <div class="col-md-3 h30px"><button type="button" class=" neonnumbers neonborder buttonnum">8</button></div>
-   <div class="col-md-3 h30px"><button type="button" class=" neonnumbers neonborder buttonnum">9</button></div>
-    <div class="col-md-3 h30px"><button type="button" class=" neonnumbers neonborder buttonnum">x</button></div>
+  <div class="col-md-3 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value="7" onclick="document.getElementById('answer').textContent+='7'" /> </div>
+  <div class="col-md-3 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value="8" onclick="document.getElementById('answer').textContent+='8'" /> </div>
+   <div class="col-md-3 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value="9" onclick="document.getElementById('answer').textContent+='9'" /></div>
+    <div class="col-md-3 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value="x" onclick="document.getElementById('answer').textContent+='*'" /> </div>
 </div>
 <div class="row">
 	<div class="col-xs-12 h10px"> </div>
 </div>
 <!--row-->
 <div class="row">
-  <div class="col-md-3 h30px"><button type="button" class=" neonnumbers neonborder buttonnum">4</button></div>
-  <div class="col-md-3 h30px"><button type="button" class="neonnumbers neonborder buttonnum">5</button></div>
-   <div class="col-md-3 h30px"><button type="button" class=" neonnumbers neonborder buttonnum">6</button></div>
-    <div class="col-md-3 h30px"><button type="button" class=" neonnumbers neonborder buttonnum">-</button></div>
+  <div class="col-md-3 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value="4" onclick="document.getElementById('answer').textContent+='4'" /> </div>
+  <div class="col-md-3 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value="5" onclick="document.getElementById('answer').textContent+='5'" /></div>
+   <div class="col-md-3 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value="6" onclick="document.getElementById('answer').textContent+='6'" /></div>
+    <div class="col-md-3 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value="-" onclick="document.getElementById('answer').textContent+='-'" /> </div>
 </div>
 <div class="row">
 	<div class="col-xs-12 h10px"> </div>
 </div>
 <!--row-->
 <div class="row">
-  <div class="col-md-3 h30px"><button type="button" class=" neonnumbers neonborder buttonnum">1</button></div>
-  <div class="col-md-3 h30px"><button type="button" class=" neonnumbers neonborder buttonnum">2</button></div>
-   <div class="col-md-3 h30px"><button type="button" class=" neonnumbers neonborder buttonnum">3</button></div>
-    <div class="col-md-3 h30px"><button type="button" class=" neonnumbers neonborder buttonnum">+</button></div>
+  <div class="col-md-3 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value="1" onclick="document.getElementById('answer').textContent+='1'" /> </div>
+  <div class="col-md-3 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value="2" onclick="document.getElementById('answer').textContent+='2'" /> </div>
+   <div class="col-md-3 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value="3" onclick="document.getElementById('answer').textContent+='3'" /></div>
+    <div class="col-md-3 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value="+" onclick="document.getElementById('answer').textContent+='+'" /> </div>
 </div>
 <div class="row">
 	<div class="col-xs-12 h10px"> </div>
 </div>
 <!--row-->
 <div class="row">
-  <div class="col-md-3 h30px"><button type="button" class=" neonnumbers neonborder buttonnum">.</button></div>
-  <div class="col-md-3 h30px"><button type="button" class=" neonnumbers neonborder buttonnum">0</button></div>
-   <div class="col-md-3 h30px"><button type="button" class=" neonnumbers neonborder buttonnum">exp</button></div>
-    <div class="col-md-3 h30px"><button type="button" class=" display0 neonnumbers neonborder buttonnum">=</button></div>
+<div class="col-md-6">
+<div class="row">
+  <div class="col-md-6 h30px" ><input type="button" class=" neonnumbers  neonborder buttonnum" value="." onclick="document.getElementById('answer').textContent+='.'" style="margin-left: -16px;"/> </div>
+  <div class="col-md-6 h30px"><input type="button" class=" neonnumbers  neonborder buttonnum" value="0" onclick="document.getElementById('answer').textContent+='0'" /></div>
 </div>
+</div>
+<div class="col-md-6">
+<div class="row">
+  <div class="col-md-12 h30px"><button type="button" onclick="a()" class=" neonnumbers neonborder buttonnum"style="width: 182px;margin-left: -12px;">=</button></div>
+</div>
+</div>
+
+
 <div class="row">
 	<div class="col-xs-12 h10px"> </div>
 </div>
@@ -106,8 +126,16 @@
 
 </body>
 <script type="text/javascript">
-var a
-
+function a(){
+var b=document.getElementById('answer').textContent;
+document.getElementById('expression').textContent=b;
+var ans=eval(b);
+document.getElementById('answer').textContent=ans;
+}
+function clearit(){
+document.getElementById('expression').textContent=''  
+document.getElementById('answer').textContent=''
+}
 </script>
 
 
