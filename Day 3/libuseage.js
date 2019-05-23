@@ -1,3 +1,8 @@
 var ab = require ('fs')
 var res= ab.readFileSync('file.txt')
 console.log (res.toString())
+var res1= ab.readFileSync('file1.txt')
+console.log (res1.toString())
+console.log ('hey!')
+var res2= ab.readFileSync('file.txt')
+console.log (res2.toString())
