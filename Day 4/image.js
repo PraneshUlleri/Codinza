@@ -87,10 +87,12 @@ api.on('inline.callback.query', function(msg) {
                      console.log(Object.keys(obj).length);
              var max=Object.keys(obj).length;
                 var random =Math.floor(Math.random() * (+max - +min)) + +min; 
-                api.sendMessage({
-                    chat_id:message.chat.id,
-                text: JSON.parse(body).articles[random].title       
-                 })
+                 api.sendPhoto({
+            chat_id:message.chat.id ,
+             caption: JSON.parse(body).articles[random].title ,
+            photo: JSON.parse(body).articles[random].urlToImage
+           
+           })
                })
        
      }
