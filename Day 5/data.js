@@ -120,8 +120,15 @@ app.get('/signupsubmit',function (req, res) {
 })
 
 app.set('view engine','ejs');
+
 app.get('/', function(req,res){
-res.render('dash')
+var language={
+	computer:"old",
+	used:"c"
+
+}
+
+res.render('dash',{ab:language})
 })
 
 app.listen(8080, function(){
