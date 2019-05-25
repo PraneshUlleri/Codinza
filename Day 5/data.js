@@ -62,8 +62,19 @@ app.get('/login',function (req, res) {
 })
 
 app.get('/loginsubmit',function (req, res) {
-		var pas=req.query.pas
-		var usr=req.query.usr
+		var logcheck={ pas:req.query.pas,
+		 usr:req.query.usr}
+
+		db.Pi.find(logcheck, function(err, data) {
+			if (data.length>0){
+				res.send("Already Signed up using this email ")
+			}
+			else{
+				res.send("SignedIn!")
+			}
+		})
+
+
 })
 
 app.get('/login/err',function (req, res) {
@@ -92,7 +103,7 @@ app.get('/signupsubmit',function (req, res) {
 		if (err){
 		console.log(err)}
 		else{
-		console.log(dataname +" is inserted" )
+		console.log(details +" is inserted" )
 		}
 		})
 
@@ -108,12 +119,9 @@ app.get('/signupsubmit',function (req, res) {
 		
 })
 
-
-app.get('/signup/err',function (req, res) {
-	res.send("signup failed!")
-})
-app.get('/signup/sucess',function (req, res) {
-	res.send("Sucess!")
+app.set('view engine','ejs');
+app.get('/', function(req,res){
+res.render('dash')
 })
 
 app.listen(8080, function(){
