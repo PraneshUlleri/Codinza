@@ -1,0 +1,63 @@
+0 info it worked if it ends with ok
+1 verbose cli [ '/usr/bin/node', '/usr/bin/npm', 'install', 'fs' ]
+2 info using npm@3.5.2
+3 info using node@v8.10.0
+4 verbose config Skipping project config: /home/pranesh/.npmrc. (matches userconfig)
+5 silly loadCurrentTree Starting
+6 silly install loadCurrentTree
+7 silly install readLocalPackageData
+8 silly fetchPackageMetaData fs
+9 silly fetchNamedPackageData fs
+10 silly mapToRegistry name fs
+11 silly mapToRegistry using default registry
+12 silly mapToRegistry registry https://registry.npmjs.org/
+13 silly mapToRegistry uri https://registry.npmjs.org/fs
+14 verbose request uri https://registry.npmjs.org/fs
+15 verbose request no auth needed
+16 info attempt registry request try #1 at 3:35:10 AM
+17 verbose request id d5b020d677e4e831
+18 http request GET https://registry.npmjs.org/fs
+19 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 104.16.26.35:443
+20 info attempt registry request try #2 at 3:37:32 AM
+21 http request GET https://registry.npmjs.org/fs
+22 info retry will retry, error on last attempt: Error: connect ETIMEDOUT 104.16.23.35:443
+23 info attempt registry request try #3 at 3:40:41 AM
+24 http request GET https://registry.npmjs.org/fs
+25 silly fetchPackageMetaData Error: connect ETIMEDOUT 104.16.16.35:443
+25 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+25 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+25 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+25 silly fetchPackageMetaData  error for fs { Error: connect ETIMEDOUT 104.16.16.35:443
+25 silly fetchPackageMetaData     at Object._errnoException (util.js:1022:11)
+25 silly fetchPackageMetaData     at _exceptionWithHostPort (util.js:1044:20)
+25 silly fetchPackageMetaData     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+25 silly fetchPackageMetaData   code: 'ETIMEDOUT',
+25 silly fetchPackageMetaData   errno: 'ETIMEDOUT',
+25 silly fetchPackageMetaData   syscall: 'connect',
+25 silly fetchPackageMetaData   address: '104.16.16.35',
+25 silly fetchPackageMetaData   port: 443 }
+26 silly rollbackFailedOptional Starting
+27 silly rollbackFailedOptional Finishing
+28 silly runTopLevelLifecycles Starting
+29 silly runTopLevelLifecycles Finishing
+30 silly install printInstalled
+31 verbose stack Error: connect ETIMEDOUT 104.16.16.35:443
+31 verbose stack     at Object._errnoException (util.js:1022:11)
+31 verbose stack     at _exceptionWithHostPort (util.js:1044:20)
+31 verbose stack     at TCPConnectWrap.afterConnect [as oncomplete] (net.js:1198:14)
+32 verbose cwd /home/pranesh/Github/Codinza/Practice/NodeJS
+33 error Linux 4.15.0-47-generic
+34 error argv "/usr/bin/node" "/usr/bin/npm" "install" "fs"
+35 error node v8.10.0
+36 error npm  v3.5.2
+37 error code ETIMEDOUT
+38 error errno ETIMEDOUT
+39 error syscall connect
+40 error network connect ETIMEDOUT 104.16.16.35:443
+41 error network This is most likely not a problem with npm itself
+41 error network and is related to network connectivity.
+41 error network In most cases you are behind a proxy or have bad network settings.
+41 error network
+41 error network If you are behind a proxy, please make sure that the
+41 error network 'proxy' config is set properly.  See: 'npm help config'
+42 verbose exit [ 1, true ]
