@@ -2,7 +2,7 @@
 var telegram = require('telegram-bot-api');
 var request = require('request')    
 var mongojs = require('mongojs')   
-var db = mongojs('mongodb://pi:abc123321@cluster0-shard-00-00-ccqn3.mongodb.net:27017/Pi?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin', ['Pi'])
+var db = mongojs('mongodb://pi:abc123321@cluster0-shard-00-00-ccqn3.mongodb.net:27017/Pi?ssl=true&replicaSet=Cluster0-shard-0&authSource=admin', ['TelegramData'])
 
 
 var api = new telegram({
@@ -12,7 +12,7 @@ var api = new telegram({
              }
 });
 api.on('message', function(message)
-{
+{console.log("======All msg Details=====")
     console.log(message)
     var chat_id = message.chat.id;
     if (message.text=="hi"){
@@ -144,7 +144,7 @@ api.on('inline.callback.query', function(msg) {
         })
      }
 
-    console.log("news on the floor");
+    console.log("news on the roll");
 
 var chatdetails={
     from: message.from.username,
@@ -152,7 +152,7 @@ var chatdetails={
     requested_for: newstype,
     chat_id:message.chat.id,
 }
-db.Pi.insert(chatdetails, function(err,data ){
+db.TelegramData.insert(chatdetails, function(err,data ){
 if (err){
 console.log(err)}
 else{
